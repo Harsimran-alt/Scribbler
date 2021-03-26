@@ -13,7 +13,7 @@ body{
     color:blue;
 }
 #main{
-    margin-top: 150px;
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,4 +25,23 @@ body{
     color:black;
     padding:5px 10px 5px 10px;
     margin:10px;
+}
+#sign_in{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal-body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal-header{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
 }
