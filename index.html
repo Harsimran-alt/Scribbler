@@ -27,17 +27,19 @@
             </ul>
           </nav>
     </header>
+
 <div id="main">
     <span>
         <button id="post" onclick="window.location.href = './html/bloglist.html';"><b>All Posts</b></button>
         <button id="post" data-toggle="modal" data-target="#pen_post"><b>Create Post</b></button>
     </span>
 </div>
-<div class="modal fade" id="sign_in" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+
+<div class="modal fade" id="sign_in" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100" id="ModalLabel">Welcome Back !</h4>
+        <h4 class="modal-title w-100" id="ModalLabel">Welcome Back!</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -46,7 +48,7 @@
           <form>
             <div class="form-group">
                 <label for="InputUsername">Username</label>
-                <input type="text" class="form-control" id="InputUsername" aria-describedby="usernameHelp" placeholder="Enter your username" required>
+                <input type="text" class="form-control" id="InputUsername" placeholder="Enter your username" required>
             </div>
             <div class="form-group">
                 <label for="InputPassword1">Password</label>
@@ -59,6 +61,48 @@
                 Not a member ? 
                 <a data-target="#sign_up" data-dismiss="modal" data-toggle="modal" href="#sign_up"> 
                   Sign Up
+                </a>
+            </div>
+        </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sign_up" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100" id="ModalLabel">Get Started</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="InputFullname">Full name</label>
+              <input type="text" class="form-control" id="InputFullname" placeholder="Full Name" required>
+          </div>
+            <div class="form-group">
+                <label for="InputnewUsername">Username</label>
+                <input type="text" class="form-control" id="InputnewUsername" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="InputnewPassword">Password</label>
+                <input type="password" class="form-control" id="InputnewPassword1" placeholder="Enter Your Password" required>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Password</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+          </div>
+            <div class="modal-signin-container">
+                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+            </div>
+            <div class="modal-footer border-top-0 d-flex justify-content-center">
+                Already a member ? 
+                <a data-target="#sign_in" data-dismiss="modal" data-toggle="modal" href="#sign_in"> 
+                  Sign in
                 </a>
             </div>
         </form>

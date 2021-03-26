@@ -48,7 +48,7 @@ a:hover{
 a:visited{
     color:black;
 }
-.modal-header{
+#ModalLabel{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-size: larger;
