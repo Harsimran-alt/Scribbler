@@ -5,3 +5,11 @@
     padding:5px 10px 5px 10px;
     margin:10px;
 }
+#Title{
+    font-family: 'Montez', cursive;
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;    
+    }

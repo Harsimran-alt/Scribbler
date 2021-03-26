@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap" >   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    <!-- TODO: Include Google Fonts file here -->
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->
-
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
-
-    <!-- list of all posts starts here -->
+    <header>
+          <nav class="navbar transparent fixed-top">
+            <a class="navbar-brand" class="logo-title" id="Title">ScriBBler
+            <p class="middleText" style="font-size:25px;">Explore, Imagine, Create</p></a>
+            <ul class="navbar-nav navbar-nav navbar-right">
+                <li>
+                  <button id="sign" data-toggle="modal" data-target="#sign_in">Sign In</button>
+                  <button id="sign" data-toggle="modal" data-target="#sign_up">Sign Up</button>
+                </li>
+            </ul>
+          </nav>
+    </header>
     <div>
 
         <!-- post 1 starts here -->
@@ -125,6 +139,81 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <div class="modal fade" id="sign_in" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100" id="ModalLabel">Welcome Back!</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                      <label for="InputUsername">Username</label>
+                      <input type="text" class="form-control" id="InputUsername" placeholder="Enter your username" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="InputPassword1">Password</label>
+                      <input type="password" class="form-control" id="InputPassword1" placeholder="Enter your password" required>
+                  </div>
+                  <div class="modal-signin-container">
+                      <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                  </div>
+                  <div class="modal-footer border-top-0 d-flex justify-content-center">
+                      Not a member ? 
+                      <a data-target="#sign_up" data-dismiss="modal" data-toggle="modal" href="#sign_up"> 
+                        Sign Up
+                      </a>
+                  </div>
+              </form>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="sign_up" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100" id="ModalLabel">Get Started</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="InputFullname">Full name</label>
+                    <input type="text" class="form-control" id="InputFullname" placeholder="Full Name" required>
+                </div>
+                  <div class="form-group">
+                      <label for="InputnewUsername">Username</label>
+                      <input type="text" class="form-control" id="InputnewUsername" placeholder="Enter your username" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="InputnewPassword">Password</label>
+                      <input type="password" class="form-control" id="InputnewPassword1" placeholder="Enter Your Password" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                  <div class="modal-signin-container">
+                      <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                  </div>
+                  <div class="modal-footer border-top-0 d-flex justify-content-center">
+                      Already a member ? 
+                      <a data-target="#sign_in" data-dismiss="modal" data-toggle="modal" href="#sign_in"> 
+                        Sign in
+                      </a>
+                  </div>
+              </form>
+              </div>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>

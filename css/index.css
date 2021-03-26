@@ -20,14 +20,6 @@ body{
     justify-content: center;
     padding: 20px 20px 20px 20px;
 }
-#Title{
-    font-family: 'Montez', cursive;
-    font-size: 50px;
-    color: #112fb4;
-    margin: auto;
-    text-decoration: none;
-    margin: 10px 10px 0px 10px;    
-    }
 #post{
     font-family: Arial, sans-serif;
     background-color:rgb(247, 193, 17);
