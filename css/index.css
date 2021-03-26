@@ -20,25 +20,33 @@ body{
     justify-content: center;
     padding: 20px 20px 20px 20px;
 }
+#Title{
+    font-family: 'Montez', cursive;
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;    
+    }
 #post{
+    font-family: Arial, sans-serif;
     background-color:rgb(247, 193, 17);
     color:black;
+    text-decoration: none;
     padding:5px 10px 5px 10px;
     margin:10px;
+    
 }
-#sign_in{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+a:link{
+    color:black;
+    text-decoration:none;
 }
-.modal-body{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+a:hover{
+    color: black;
+    text-decoration:none;
+}
+a:visited{
+    color:black;
 }
 .modal-header{
     color:rgb(0, 0, 0);
