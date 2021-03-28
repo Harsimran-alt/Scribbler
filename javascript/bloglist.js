@@ -1,3 +1,3 @@
-function func(){
+function EditPost(author, heading, content){
     
 }

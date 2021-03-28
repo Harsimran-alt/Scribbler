@@ -18,6 +18,7 @@
     width:50%;
     border-radius: 15px;
     padding:20px 40px 10px 40px;
+    
 
 }
 .post_heading{
@@ -42,8 +43,22 @@ p{
 i{
     float:right;
     padding:20px;
+    cursor:pointer;
 }
 h6{
     margin:auto;
     padding: 10px;
+}
+#TitleConfirmYesNo{
+margin-top: 15px;
+padding-bottom:10px;
+}
+#btnYesConfirm{
+    width:30%;
+    text-align: center;
+}
+#btnNoConfirm{
+    width:30%;
+    text-align: center;
+
 }
