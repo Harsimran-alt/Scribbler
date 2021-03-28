@@ -6,5 +6,6 @@ function EditPost(author, heading, content) {
                 encodeURIComponent(author.innerText) +
                 '&content=' +
                 encodeURIComponent(content.innerText);
-        window.location.href = url;
+                
+       window.location.href = url;
     }

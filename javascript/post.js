@@ -1,5 +1,6 @@
 var like=0;
 var count=1;
+var count=0;
 const queryString = new Array();
 let editMode = false;
 function Like_func(){
@@ -10,7 +11,7 @@ function Like_func(){
 function comment_list(comment){
 
 }
-/*window.onload = function() {
+window.onload = function() {
     if (queryString.length == 0) {
             if (window.location.search.split('?').length > 1) {
                     const params = window.location.search.split('?')[1].split('&');
@@ -22,16 +23,14 @@ function comment_list(comment){
             }
     }
     if (queryString.heading != null && queryString.author != null) {
-            const { heading } = queryString;
-            const { author } = queryString;
-            const { content } = queryString;
-            document.getElementsByClassName('heading-content')[0].innerHTML = heading;
-            document.getElementsByClassName('author-name')[0].innerHTML = author;
-            document.getElementsByClassName('post-content')[0].innerHTML = content;
+        
+            document.getElementById('heading1').innerHTML=queryString.heading;
+            document.getElementById('author1').innerHTML=queryString.author;
+            document.getElementById('content1').innerHTML=queryString.content;
     }
-    document.getElementById('comments').style.visibility = 'hidden';
+    //document.getElementById('comments').style.visibility = 'hidden';
     
-};*/
+};
 const comments = [];
 
 function addingComment(item, index) {
@@ -52,5 +51,18 @@ function addComment(comment) {
         }
 }
 function Edit(){
-        document.getElementById("edit_btn").innerHTML='Save <i class="fa fa-save"></i>';
+        if(count===0){
+                document.getElementById('edit_btn').innerHTML ='Save<i class="fa fa-save" style="padding-left: 4px;"></i>';
+                document.getElementById('content1').style.borderWidth='2px';
+                document.getElementById('content1').style.borderStyle='solid';
+                count++;
+        }
+        else
+        {  
+                document.getElementById('edit_btn').innerHTML ='Edit<i class="fa fa-edit" style="padding-left: 4px;"></i>';
+                count++;
+                document.getElementById('content1').style.borderWidth='0px';
+                document.getElementById('content1').style.borderStyle='none';
+                document.getElementById('edit_btn').disabled = true;
+        }
 }
