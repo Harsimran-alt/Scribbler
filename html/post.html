@@ -25,27 +25,24 @@
     </h3>
     <div>
         <span class="author1" contenteditable="true"> </span>
-        <button type="button" id="edit_btn" onclick="">Edit <i class="fa fa-edit"></i></button>
+        <button type="button" class="btn" id="edit_btn" onclick="">Edit <i class="fa fa-edit"></i></button>
     </div>
     <br>
     <div id="middle">
         <textarea cols class="content1" contenteditable="true"></textarea>
     </div>
     <div id="bottom">
-        <button type="button" id="like_btn" onClick="Like_func()"><i class="fa fa-thumbs-up"></i> Like</button>
+        <button type="button" class="btn" id="like_btn" onClick="Like_func()"><i class="fa fa-thumbs-up"></i> Like</button>
         <br><br>
         <p id="like">Be the first one to like this</p>
         <br>
-        <textarea id="comment" cols="100" rows="4" placeholder="Leave a comment..."></textarea>
-        <br><br>
-        <button type="button" id="comment_btn" onClick="comment_post(comment)">Comment</button>
-    </div>
-    <div>
-        <h4>All Comments</h4>
-        <br>
-        <br>
-        <div id="comment_list">
-            <p></p>
+        <textarea id="comment" rows="4" cols="130" placeholder="Leave a comment..." name="comment"></textarea>
+        <div><button id="comment_btn" type="button" class="btn btn-danger"
+                onClick="addComment(comment)">Comment</button></div>
+        <div id="allCommentsHeading">All Comments</div>
+        <div class="comment-container">
+            <div id="comments">
+            </div>
         </div>
     </div>
     </div>

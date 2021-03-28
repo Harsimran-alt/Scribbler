@@ -29,5 +29,25 @@ window.onload = function() {
             document.getElementsByClassName('author-name')[0].innerHTML = author;
             document.getElementsByClassName('post-content')[0].innerHTML = content;
     }
+    document.getElementById('comments').style.visibility = 'hidden';
     
 };
+const comments = [];
+
+function addingComment(item, index) {
+        const temp = document.getElementById('comments').innerHTML;
+        document.getElementById('comments').innerHTML = `<div class="comment">${item}</div>`;
+        document.getElementById('comments').innerHTML += `${temp}</br>`;
+        comments.pop();
+}
+
+function addComment(comment) {
+        if (comment.value !== '') {
+                document.getElementById('comments').style.visibility = 'visible';
+                var comment = comment.value;
+                comments.unshift(comment);
+                $('#comment').val('');
+                comments.forEach(addingComment);
+                $(document).scrollTop($(document).height());
+        }
+}
