@@ -1,9 +1,13 @@
+#header{
+    position:fixed;
+}
 #sign{
     width:100px;
     background-color:blue;
     color:white;
     padding:5px 10px 5px 10px;
     margin:10px;
+    float:right;
 }
 #Title{
     font-family: 'Montez', cursive;

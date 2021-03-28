@@ -1,11 +1,11 @@
 
 .main{
-    margin-top: 150px;
+    margin-top: auto;
 }
 .post_container{
     display:flex;
     justify-content: space-around;
-    margin:auto;
+    margin-bottom:10px;
     
 }
 .post{
@@ -17,7 +17,7 @@
     height:100%;
     width:50%;
     border-radius: 15px;
-    padding:50px;
+    padding:20px 40px 10px 40px;
 
 }
 .post_heading{
@@ -29,19 +29,21 @@
 }
 
 .post_content{
+    
     margin:auto;
     border-radius:0px 15px 15px 0px;
     background-color:lightgrey;
 }
 p{
+    font-size:15px;
     margin:auto;
-    padding:15px;
+    padding:10px;
 }
 i{
     float:right;
     padding:20px;
 }
-h5{
+h6{
     margin:auto;
-    padding: 15px;
+    padding: 10px;
 }
