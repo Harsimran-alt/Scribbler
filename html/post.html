@@ -24,24 +24,29 @@
         hello
     </h3>
     <div>
-        <span id="author1"></span>
-        <button type="button" id="edit" onclick="">Edit</button>
+        <span id="author1"> Yo</span>
+        <button type="button" id="edit_btn" onclick="">Edit <i class="fa fa-edit"></i></button>
     </div>
+    <br>
     <div id="middle">
-        <p id=>hello</p>
+        <textarea cols id="content1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, cum expedita aliquid nemo aperiam natus quo eaque commodi voluptates, fugit fugiat maxime ut ipsa neque fuga sequi iste, veniam enim! Aspernatur, doloremque. Atque facilis cumque reprehenderit, dolores autem nihil ea perferendis enim quisquam. Quae, delectus. Labore at veritatis repellat eos aliquam ipsam modi ratione quibusdam dolores incidunt itaque accusantium, nisi ut. Nihil itaque minus recusandae! Voluptatum, asperiores error tempora magnam consequuntur perspiciatis! Alias eum porro doloribus provident quis aperiam assumenda sequi, voluptas sunt minima? Quaerat, commodi reiciendis! Eum saepe nisi quibusdam repellat exercitationem totam? Necessitatibus impedit nisi unde veritatis ullam.</textarea>
     </div>
     <div id="bottom">
-        <button type="button" onClick="">Like</button>
+        <button type="button" id="like_btn" onClick="Like_func()"><i class="fa fa-thumbs-up"></i> Like</button>
         <br><br>
         <p id="like">Be the first one to like this</p>
         <br>
-        <input type="text" id="comment" placeholder="Leave a comment">
+        <textarea id="comment" cols="100" rows="4" placeholder="Leave a comment..."> </textarea>
         <br><br>
-        <button type="button" onclick="">Comment</button>
+        <button type="button" id="comment_btn" onClick="comment_post(comment)">Comment</button>
     </div>
     <div>
         <h4>All Comments</h4>
-
+        <br>
+        <br>
+        <div id="comment_list">
+            <p></p>
+        </div>
     </div>
     </div>
     <div class="modal fade" id="sign_in" tabindex="-1" role="dialog" aria-hidden="true">
@@ -120,5 +125,6 @@
         </div>
       </div>
       <script src="../javascript/post.js"></script>
+      <script src="../javascript/header.js"></script>
 </body>
 </html>
