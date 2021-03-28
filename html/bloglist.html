@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bloglist.css">
     <link rel="stylesheet" href="../css/header.css">
-    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez&display=swap" >   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    <!-- TODO: Include Google Fonts file here -->
 </head>
 
-<body>
+<body style="background-color:blueviolet;">
     <header>
           <nav class="navbar transparent fixed-top">
             <a class="navbar-brand" class="logo-title" id="Title">ScriBBler
@@ -26,50 +26,57 @@
             </ul>
           </nav>
     </header>
-    <div>
+    <div class="main">
+    <div class="post_container">
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="post"> 
+            <div class="post_heading">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="post_content">
                 <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                    <span data-toggle="modal" data-target="#modalConfirm">
+                        <i class="fa fa-trash fa-lg"></i></span>
+                        <br>
+                        <h5>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h5>
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.
+                <span onclick="">
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
+                </p>
             </div>
         </div>
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="post_heading">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
+            <div class="post_content">
                 <div>
-                    <p>What is linting and how can it save you time?</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                    <span data-toggle="modal" data-target="#modalConfirm">
+                        <i class="fa fa-trash fa-lg"></i>
+                        <br>
+                        <h5>What is linting and how can it save you time?</h5>
                     </span>
                 </div>
-                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.
+                <span onclick="">
+                    <i style="font-size:24px" class="fa">&#xf141;</i>
                 </span>
+                </p>
             </div>
         </div>
         <!-- post 2 ends here -->
-
+    </div>
+    <div class="post_container">
         <!-- post 3 starts here -->
         <div>
             <div>
@@ -112,7 +119,8 @@
             </div>
         </div>
         <!-- post 4 ends here -->
-
+    </div>
+    <div class="post_container">
         <!-- post 5 starts here -->
         <div>
             <div>
@@ -139,6 +147,7 @@
 
     </div>
     <!-- list of all posts ends here -->
+    </div>
     <div class="modal fade" id="sign_in" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
