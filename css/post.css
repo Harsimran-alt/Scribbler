@@ -1,0 +1,24 @@
+button{
+    border:none;
+    color:white;
+    background-color:red;
+    padding:10px;
+    
+}
+#edit{
+    float:right;
+}
+#heading1{
+    margin-top: 10px;
+    text-align: center;
+}
+#main{
+    padding:20px;
+}
+#bottom{
+    padding-bottom:20px;
+}
+#comment{
+    height:100px;
+    width:25%;
+}
