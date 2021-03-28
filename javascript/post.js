@@ -10,7 +10,7 @@ function Like_func(){
 function comment_list(comment){
 
 }
-window.onload = function() {
+/*window.onload = function() {
     if (queryString.length == 0) {
             if (window.location.search.split('?').length > 1) {
                     const params = window.location.search.split('?')[1].split('&');
@@ -31,7 +31,7 @@ window.onload = function() {
     }
     document.getElementById('comments').style.visibility = 'hidden';
     
-};
+};*/
 const comments = [];
 
 function addingComment(item, index) {
@@ -50,4 +50,7 @@ function addComment(comment) {
                 comments.forEach(addingComment);
                 $(document).scrollTop($(document).height());
         }
+}
+function Edit(){
+        document.getElementById("edit_btn").innerHTML='Save <i class="fa fa-save"></i>';
 }
